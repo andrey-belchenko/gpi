@@ -1,5 +1,7 @@
 ﻿CREATE TABLE [dm].[FactProject](
 	[Timestamp] [datetime2](7) NULL,
+	[ValidFrom] date,
+	[ValidTo] date,
 	[ProjectUID] [uniqueidentifier] NULL,
 	[ProjectFinishDate] [datetime2](7) NULL,
 	[ProjectPercentCompleted] [smallint] NULL,

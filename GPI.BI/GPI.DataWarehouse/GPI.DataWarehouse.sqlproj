@@ -89,6 +89,12 @@
     <Build Include="Source\etl\Procedures\LoadDimTask.sql" />
     <Build Include="Source\etl\Procedures\LoadDimPortfolio.sql" />
     <Build Include="Source\etl\Procedures\LoadDimPortfolioProject.sql" />
+    <Build Include="Source\etl\Procedures\LoadFactProject.sql" />
+    <Build Include="Source\etl\Procedures\ReloadFactProject.sql" />
+    <Build Include="Source\etl\Procedures\SliceFactProject.sql" />
+    <Build Include="Source\etl\Procedures\LoadFactTask.sql" />
+    <Build Include="Source\etl\Procedures\ReloadFactTask.sql" />
+    <Build Include="Source\etl\Procedures\SliceFactTask.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\stg_forms.sql" />
