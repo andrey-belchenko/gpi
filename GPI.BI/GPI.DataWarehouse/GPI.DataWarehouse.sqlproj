@@ -63,6 +63,10 @@
     <Folder Include="Source\stg_pwa" />
     <Folder Include="Source\stg_pwa\Tables" />
     <Folder Include="Source\stg_forms\Tables" />
+    <Folder Include="Source\etl\Procedures" />
+    <Folder Include="Source\dm" />
+    <Folder Include="Source\dm\Tables" />
+    <Folder Include="Source\etl\Views\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\stg_pwa.sql" />
@@ -71,8 +75,20 @@
     <Build Include="Source\stg_pwa\Tables\Project.sql" />
     <Build Include="Source\stg_forms\Tables\LinkPortfolioProjects.sql" />
     <Build Include="Source\stg_forms\Tables\PortfolioList.sql" />
-    <Build Include="Source\stg_pwa\Tables\ProjectType.sql" />
     <Build Include="Source\stg_pwa\Tables\Task.sql" />
+    <Build Include="Source\etl\Procedures\LoadDimProject.sql" />
+    <Build Include="Security\dm.sql" />
+    <Build Include="Source\dm\Tables\FactProject.sql" />
+    <Build Include="Source\dm\Tables\DimProject.sql" />
+    <Build Include="Source\dm\Tables\FactTask.sql" />
+    <Build Include="Source\dm\Tables\DimTask.sql" />
+    <Build Include="Source\dm\Tables\DimPortfolio.sql" />
+    <Build Include="Source\dm\Tables\DimPortfolioProject.sql" />
+    <Build Include="Source\etl\Views\vProject.sql" />
+    <Build Include="Source\etl\Views\vTask.sql" />
+    <Build Include="Source\etl\Procedures\LoadDimTask.sql" />
+    <Build Include="Source\etl\Procedures\LoadDimPortfolio.sql" />
+    <Build Include="Source\etl\Procedures\LoadDimPortfolioProject.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\stg_forms.sql" />

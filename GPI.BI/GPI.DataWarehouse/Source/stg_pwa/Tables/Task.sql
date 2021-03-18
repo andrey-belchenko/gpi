@@ -1,4 +1,5 @@
 ﻿CREATE TABLE [stg_pwa].[Task](
+	[Timestamp] [datetime2](7) NULL,
 	[ProjectUID] [uniqueidentifier] NULL,
 	[TaskParentUID] [uniqueidentifier] NULL,
 	[TaskUID] [uniqueidentifier] NULL,
@@ -14,7 +15,6 @@
 	[TaskFinishVariance] [decimal](30, 10) NULL,
 	[TaskFinishDate] [datetime2](7) NULL,
 	[TaskPercentCompleted] [smallint] NULL,
-	[TaskPercentWorkCompleted] [smallint] NULL,
-	[Timestamp] [datetime2](7) NULL
+	[TaskPercentWorkCompleted] [smallint] NULL
 )
 WITH (DATA_COMPRESSION = PAGE)

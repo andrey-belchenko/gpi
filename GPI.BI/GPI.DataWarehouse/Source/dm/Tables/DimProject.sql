@@ -1,4 +1,4 @@
-﻿CREATE TABLE [stg_pwa].[Project](
+﻿CREATE TABLE [dm].[DimProject](
 	[Timestamp] [datetime2](7) NULL,
 	[ProjectUID] [uniqueidentifier] NULL,
 	[ProjectName] [nvarchar](4000) NULL,
@@ -8,10 +8,6 @@
 	[ProjectWorkspaceInternalHRef] [nvarchar](4000) NULL,
 	[EnterpriseProjectTypeUID] [uniqueidentifier] NULL,
 	[ProjectType] [int] NULL,
-    [ProjectTypeName] [nvarchar](4000) NULL,
-	[ProjectFinishDate] [datetime2](7) NULL,
-	[ProjectPercentCompleted] [smallint] NULL,
-	[ProjectFinishVariance] [decimal](30, 10) NULL,
-	[ProjectLastPublishedDate] [datetime2](7) NULL
+    [ProjectTypeName] [nvarchar](4000) NULL
 )
 WITH (DATA_COMPRESSION = PAGE)
