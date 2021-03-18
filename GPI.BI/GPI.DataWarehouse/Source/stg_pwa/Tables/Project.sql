@@ -13,3 +13,4 @@
 	[ProjectLastPublishedDate] [datetime2](7) NULL,
 	[Timestamp] [datetime2](7) NULL
 )
+WITH (DATA_COMPRESSION = PAGE)

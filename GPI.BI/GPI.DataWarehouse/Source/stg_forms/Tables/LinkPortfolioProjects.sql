@@ -1,4 +1,6 @@
-﻿CREATE TABLE [dbo].[LinkPortfolioProjects]
-(
-	[Id] INT NOT NULL PRIMARY KEY
+﻿CREATE TABLE [stg_forms].[LinkPortfolioProjects](
+	[Uid] [uniqueidentifier] NULL,
+	[ParentUid] [uniqueidentifier] NULL,
+	[Timestamp] [datetime2](7) NULL
 )
+WITH (DATA_COMPRESSION = PAGE)
