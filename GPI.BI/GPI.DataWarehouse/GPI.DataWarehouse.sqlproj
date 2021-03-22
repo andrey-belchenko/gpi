@@ -100,4 +100,7 @@
     <Build Include="Security\stg_forms.sql" />
     <Build Include="Security\etl.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="PublishProfiles\GPI-DEV.GPI.DataWarehouse.publish.xml" />
+  </ItemGroup>
 </Project>
