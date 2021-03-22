@@ -18,6 +18,8 @@ AS
           FROM [x];
 
      BEGIN TRAN;
+
+     TRUNCATE   TABLE    [dm].[DimProject];
      INSERT INTO [dm].[DimProject]
             SELECT *
             FROM [#x];

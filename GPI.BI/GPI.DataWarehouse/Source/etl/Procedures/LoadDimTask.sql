@@ -21,6 +21,8 @@ AS
           FROM [x];
 
      BEGIN TRAN;
+
+     TRUNCATE   TABLE   [dm].[DimTask];
      INSERT INTO [dm].[DimTask]
             SELECT *
             FROM [#x];

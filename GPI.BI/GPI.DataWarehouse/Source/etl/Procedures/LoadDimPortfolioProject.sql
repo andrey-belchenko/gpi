@@ -12,6 +12,7 @@ AS
           FROM [x];
 
      BEGIN TRAN;
+     TRUNCATE   TABLE     [dm].[DimPortfolioProject];
      INSERT INTO [dm].[DimPortfolioProject]
             SELECT *
             FROM [#x];
