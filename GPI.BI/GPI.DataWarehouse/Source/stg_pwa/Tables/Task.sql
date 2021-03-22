@@ -15,6 +15,7 @@
 	[TaskFinishVariance] [decimal](30, 10) NULL,
 	[TaskFinishDate] [datetime2](7) NULL,
 	[TaskPercentCompleted] [smallint] NULL,
-	[TaskPercentWorkCompleted] [smallint] NULL
+	[TaskPercentWorkCompleted] [smallint] NULL,
+	[Стадия проекта] [nvarchar](4000) NULL
 )
 WITH (DATA_COMPRESSION = PAGE)

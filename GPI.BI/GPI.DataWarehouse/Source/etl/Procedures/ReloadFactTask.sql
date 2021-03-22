@@ -17,7 +17,7 @@ AS
                      '9999' AS [ValidTo], 
                      [TaskUID], 
                      [ProjectUID], 
-                     [TaskFinishVariance] [TaskVariance], 
+                     [TaskFinishVariance] / 8 [TaskVariance], 
                      [TaskFinishDate], 
                      [TaskPercentCompleted], 
                      [TaskPercentWorkCompleted]
@@ -32,6 +32,16 @@ AS
      WHERE [ValidTo] = '9999';
 
      INSERT INTO [dm].[FactTask]
+     ([Timestamp], 
+      [ValidFrom], 
+      [ValidTo], 
+      [ProjectUID], 
+      [TaskUID], 
+      [TaskVariance], 
+      [TaskFinishDate], 
+      [TaskPercentCompleted], 
+      [TaskPercentWorkCompleted]
+     )
             SELECT *
             FROM [#x];
      COMMIT TRAN;

@@ -12,6 +12,7 @@
 	[ProjectFinishDate] [datetime2](7) NULL,
 	[ProjectPercentCompleted] [smallint] NULL,
 	[ProjectFinishVariance] [decimal](30, 10) NULL,
-	[ProjectLastPublishedDate] [datetime2](7) NULL
+	[ProjectLastPublishedDate] [datetime2](7) NULL,
+    [Текущая стадия проекта] [nvarchar](4000) NULL
 )
 WITH (DATA_COMPRESSION = PAGE)

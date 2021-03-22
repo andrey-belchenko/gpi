@@ -1,4 +1,5 @@
 ﻿
+
 CREATE PROCEDURE [etl].[LoadDimProject]
 AS
      WITH x
@@ -11,7 +12,8 @@ AS
                      [ProjectWorkspaceInternalHRef], 
                      [EnterpriseProjectTypeUID], 
                      [ProjectType], 
-                     [ProjectTypeName]
+                     [ProjectTypeName], 
+                     [Текущая стадия проекта]
               FROM [etl].[vProject])
           SELECT *
           INTO [#x]
@@ -19,8 +21,20 @@ AS
 
      BEGIN TRAN;
 
-     TRUNCATE   TABLE    [dm].[DimProject];
+     TRUNCATE TABLE [dm].[DimProject];
      INSERT INTO [dm].[DimProject]
+     ([Timestamp], 
+      [ProjectUID], 
+      [ProjectName], 
+      [ProjectStartDate], 
+      [ProjectBaseline0StartDate], 
+      [ProjectBaseline0FinishDate], 
+      [ProjectWorkspaceInternalHRef], 
+      [EnterpriseProjectTypeUID], 
+      [ProjectType], 
+      [ProjectTypeName], 
+      [ProjectStage]
+     )
             SELECT *
             FROM [#x];
      COMMIT TRAN;

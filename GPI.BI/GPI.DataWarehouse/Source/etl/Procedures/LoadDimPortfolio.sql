@@ -15,8 +15,15 @@ AS
           FROM [x];
 
      BEGIN TRAN;
-     TRUNCATE   TABLE    [dm].[DimPortfolio];
+     TRUNCATE TABLE [dm].[DimPortfolio];
      INSERT INTO [dm].[DimPortfolio]
+     ([Timestamp], 
+      [PortfolioUID], 
+      [PortfolioId], 
+      [PortfolioName], 
+      [PortfolioCurator], 
+      [PortfolioType]
+     )
             SELECT *
             FROM [#x];
      COMMIT TRAN;

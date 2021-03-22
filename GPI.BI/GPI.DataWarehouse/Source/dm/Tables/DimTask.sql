@@ -11,7 +11,9 @@
 	[TaskBaselineStartDate] [datetime2](7) NULL,
 	[TaskBaselineFinishDate] [datetime2](7) NULL,
 	[TaskType] [nvarchar](4000) NULL,
-	[Responder] [nvarchar](4000) NULL
+	[Responder] [nvarchar](4000) NULL,
+	[Stage] [nvarchar](4000) NULL
+
 )
 WITH (DATA_COMPRESSION = PAGE)
 

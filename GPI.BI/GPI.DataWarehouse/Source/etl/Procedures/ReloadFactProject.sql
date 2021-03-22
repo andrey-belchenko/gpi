@@ -31,6 +31,15 @@ AS
      WHERE [ValidTo] = '9999';
 
      INSERT INTO [dm].[FactProject]
+     ([Timestamp], 
+      [ValidFrom], 
+      [ValidTo], 
+      [ProjectUID], 
+      [ProjectFinishDate], 
+      [ProjectPercentCompleted], 
+      [ProjectFinishVariance], 
+      [ProjectLastPublishedDate]
+     )
             SELECT *
             FROM [#x];
      COMMIT TRAN;

@@ -8,6 +8,7 @@
 	[ProjectWorkspaceInternalHRef] [nvarchar](4000) NULL,
 	[EnterpriseProjectTypeUID] [uniqueidentifier] NULL,
 	[ProjectType] [int] NULL,
-    [ProjectTypeName] [nvarchar](4000) NULL
+    [ProjectTypeName] [nvarchar](4000) NULL,
+	[ProjectStage] [nvarchar](4000) NULL
 )
 WITH (DATA_COMPRESSION = PAGE)
